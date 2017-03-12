@@ -1,0 +1,44 @@
+.color-pattern {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 0;
+  z-index: 9999;
+  span {
+    @include inline-block;
+    width: 10%;
+    height: 8px;
+    cursor: pointer;
+    &:nth-child(1) {
+      background-color: $light_blue;
+    }
+    &:nth-child(2) {
+      background-color: $yellow;
+    }
+    &:nth-child(3) {
+      background-color: $orange;
+    }
+    &:nth-child(4) {
+      background-color: $olive;
+    }
+    &:nth-child(5) {
+      background-color: $green;
+    }
+    &:nth-child(6) {
+      background-color: $red;
+    }
+    &:nth-child(7) {
+      background-color: $pink;
+    }
+    &:nth-child(8) {
+      background-color: $dark_grey;
+    }
+    &:nth-child(9) {
+      background-color: $white;
+    }
+    &:nth-child(10) {
+      background-color: $purple;
+    }
+  }
+}

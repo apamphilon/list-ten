@@ -1,0 +1,82 @@
+.intro {
+  background-color: $purple;
+  position: fixed;
+  top: 8px;
+  left: 0;
+  right: 0;
+  @include transition(all ease 1s);
+  h2 {
+    @include transition(all ease 1s);
+    margin: 24px 0;
+    color: $white;
+    @include font-size(80);
+    line-height: 80px;
+    visibility: hidden;
+    &.animated {
+      visibility: visible;
+    }
+    &:nth-child(2) {
+      color: $light-blue;
+    }
+    &:nth-child(3) {
+      @include inline-block;
+      margin: 0;
+      color: $yellow;
+      font-weight: 700;
+      position: relative;
+      overflow: hidden;
+      span {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        left: 0;
+        margin-top: 4px;
+        @include inline-block;
+        width: 100%;
+        height: 6px;
+        background: $yellow;
+      }
+    }
+  }
+  &.color-light-blue {
+    background-color: $light_blue;
+    h2 {
+      &:nth-child(2) {
+        color: $purple;
+      }
+    }
+  }
+  &.color-yellow {
+    background-color: $yellow;
+    h2 {
+      color: $light-blue !important;
+    }
+  }
+  &.color-orange {
+    background-color: $orange;
+  }
+  &.color-olive {
+    background-color: $olive;
+  }
+  &.color-green {
+    background-color: $green;
+  }
+  &.color-red {
+    background-color: $red;
+  }
+  &.color-pink {
+    background-color: $pink;
+  }
+  &.color-dark-grey {
+    background-color: $dark_grey;
+  }
+  &.color-white {
+    background-color: $white;
+    h2 {
+      color: $light-blue !important;
+    }
+  }
+  &.color-purple {
+    background-color: $purple;
+  }
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="208px" height="320px" viewBox="0 0 208 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>20BC6CFF-BBA7-4572-A9AF-4E1B29532C31</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="168" height="280"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="tix/NY" transform="translate(20.000000, 16.000000)">
+            <g id="New-York">
+                <g id="New-york">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="mask">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <path d="M168,240.644661 L168,280 L128.644661,280 L168,240.644661 Z" id="Combined-Shape" fill="#FEE94E" mask="url(#mask-2)"></path>
+                    <path d="M19.6446609,-4.4408921e-15 L90.3553391,-4.4408921e-15 L0,90.3553391 L0,19.6446609 L19.6446609,-8.8817842e-15 Z" id="Combined-Shape" fill="#FEE94E" mask="url(#mask-2)"></path>
+                    <path d="M149.459415,-5.32907052e-15 L168,-5.32907052e-15 L168,52.1700936 L-2.66453526e-15,220.170094 L0,149.459415 L149.459415,-1.0658141e-14 Z" id="Combined-Shape" fill="#FEE94E" mask="url(#mask-2)"></path>
+                    <path d="M168,111.459415 L168,182.170094 L70.1700936,280 L0,280 L0,279.459415 L168,111.459415 Z" id="Combined-Shape" fill="#FEE94E" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

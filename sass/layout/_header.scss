@@ -1,0 +1,28 @@
+.site-header {
+  position: fixed;
+  top: 8px;
+  left: 0;
+  right: 0;
+  padding: 30px 0;
+  .container {
+    position: relative;
+  }
+  .page-list & {
+    padding-bottom: 110px;
+    background-color: $purple;
+  }
+  &.z-index {
+    z-index: 999;
+    background-color: transparent;
+    transition: background ease-in-out 0.14s 0s;
+  }
+}
+
+.site-logo {
+  margin: 0;
+  a {
+    @include font-size(24);
+    color: $white;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,182 @@
+.nav-toggle-outer {
+  position: fixed;
+  padding: 20px 20px 16px 20px;
+  background-color: $purple;
+  top: 42px;
+  left: 11%;
+  cursor: pointer;
+  z-index: 9999;
+  @include transition(all ease-in-out 0.3s 0s);
+  .menu-open & {
+    background-color: $red;
+  }
+}
+
+.nav-toggle {
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  width: 24px;
+  height: 18px;
+}
+
+.nav-toggle:hover .bar {
+  background: $white;
+}
+
+.bar {
+  transition: all 0.25s ease;
+  height: 2px;
+  background: $white;
+  position: absolute;
+}
+
+.top {
+  top: 0;
+  width: 50%;
+}
+
+.middle {
+  width: 100%;
+  top: 5px;
+}
+
+.bottom {
+  width: 50%;
+  bottom: 6px;
+}
+
+.half {
+  width: 50%;
+  bottom: 1px;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.top.bar.left {
+  -webkit-transform-origin: 0% 0%;
+  -moz-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  -o-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+}
+
+.top.bar.right {
+  -webkit-transform-origin: 100% 0%;
+  -moz-transform-origin: 100% 0%;
+  -ms-transform-origin: 100% 0%;
+  -o-transform-origin: 100% 0%;
+  transform-origin: 100% 0%;
+}
+
+.bottom.bar.left {
+  -webkit-transform-origin: 0% 100%;
+  -moz-transform-origin: 0% 100%;
+  -ms-transform-origin: 0% 100%;
+  -o-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+}
+
+.bottom.bar.right {
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+.nav-toggle-outer.active .top.bar.left {
+  -webkit-transform: translate(2px, -2px) rotate(45deg) scaleX(1.25);
+  -moz-transform: translate(2px, -2px) rotate(45deg) scaleX(1.25);
+  -ms-transform: translate(2px, -2px) rotate(45deg) scaleX(1.25);
+  -o-transform: translate(2px, -2px) rotate(45deg) scaleX(1.25);
+  transform: translate(2px, -2px) rotate(45deg) scaleX(1.25);
+}
+
+.nav-toggle-outer.active .top.bar.right {
+  -webkit-transform: translate(-2px, -2px) rotate(-45deg) scaleX(1.25);
+  -moz-transform: translate(-2px, -2px) rotate(-45deg) scaleX(1.25);
+  -ms-transform: translate(-2px, -2px) rotate(-45deg) scaleX(1.25);
+  -o-transform: translate(-2px, -2px) rotate(-45deg) scaleX(1.25);
+  transform: translate(-2px, -2px) rotate(-45deg) scaleX(1.25);
+
+}
+
+.nav-toggle-outer.active .bottom.bar.left {
+  -webkit-transform: translate(2px, 8px) rotate(-45deg) scaleX(1.25);
+  -moz-transform: translate(2px, 8px) rotate(-45deg) scaleX(1.25);
+  -ms-transform: translate(2px, 8px) rotate(-45deg) scaleX(1.25);
+  -o-transform: translate(2px, 8px) rotate(-45deg) scaleX(1.25);
+  transform: translate(2px, 8px) rotate(-45deg) scaleX(1.25);
+}
+
+.nav-toggle-outer.active .bottom.bar.right {
+  -webkit-transform: translate(-2px, 8px) rotate(45deg) scaleX(1.25);
+  -moz-transform: translate(-2px, 8px) rotate(45deg) scaleX(1.25);
+  -ms-transform: translate(-2px, 8px) rotate(45deg) scaleX(1.25);
+  -o-transform: translate(-2px, 8px) rotate(45deg) scaleX(1.25);
+  transform: translate(-2px, 8px) rotate(45deg) scaleX(1.25);
+}
+
+.nav-toggle-outer.active .middle.bar {
+  display: none;
+}
+
+.nav-toggle-outer.active .half.bar {
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+.overlay-nav {
+  background-color: #ff554c;
+  position: fixed;
+  @include opacity(0);
+  visibility: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  @include transition(all ease-in-out 0.14s 0s);
+  &.active {
+    @include opacity(1);
+    visibility: visible;
+    z-index: 999;
+  }
+}
+
+.main-navigation {
+  padding-top: 160px;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    @extend %clearfix;
+  }
+  li {
+    margin-bottom: 20px;
+    width: 50%;
+    float: left;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  a {
+    @include font-size(64);
+    font-weight: 800;
+    text-transform: capitalize;
+    color: $yellow;
+    text-decoration: none;
+    &:hover {
+      color: $white;
+    }
+  }
+}

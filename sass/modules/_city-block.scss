@@ -1,0 +1,20 @@
+.city-block {
+  position: relative;
+  max-width: 170px;
+  a {
+    color: $black;
+  }
+  &__title {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0 20px;
+    text-align: center;
+    color: $black;
+    @include font-size(18);
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+}

@@ -1,0 +1,53 @@
+.pagination {
+  .pagination__prev,
+  .pagination__next {
+    position: fixed;
+    top: 50%;
+    &:hover {
+      .pagination__icon {
+        @include opacity(1);
+        visibility: visible;
+      }
+    }
+  }
+  .pagination__prev {
+    left: 20px;
+    .pagination__icon {
+      left: -100px;
+    }
+    &:hover {
+      .pagination__icon {
+        left: -20px;
+      }
+    }
+  }
+  .pagination__next {
+    right: 20px;
+    .pagination__icon {
+      right: -100px;
+    }
+    &:hover {
+      .pagination__icon {
+        right: -20px;
+      }
+    }
+  }
+  .fa {
+    @include font-size(50);
+    color: #bfbfc3;
+  }
+  &__icon {
+    @include transition(all ease-in-out 0.3s);
+    @include opacity(0);
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    margin-top: -100px;
+    width: 100px;
+    height: 200px;
+    background-image: url('http://placehold.it/100x200');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

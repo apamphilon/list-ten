@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="168px" height="280px" viewBox="-1875 397 168 280" style="enable-background:new -1875 397 168 280;" xml:space="preserve"
+	>
+<style type="text/css">
+	.st0{filter:url(#filter-2);}
+	.st1{fill:#FF554C;}
+	.st2{fill:#FF80C5;}
+</style>
+<filter  filterUnits="objectBoundingBox" x="-50%" y="-50%" id="filter-2" width="200%" height="200%">
+	<feOffset  in="SourceAlpha" result="shadowOffsetOuter1" dy="4" dx="0"></feOffset>
+	<feGaussianBlur  in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"></feGaussianBlur>
+	
+		<feColorMatrix  in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" result="shadowMatrixOuter1" type="matrix">
+		</feColorMatrix>
+	<feOffset  in="SourceAlpha" result="shadowOffsetOuter2" dy="4" dx="0"></feOffset>
+	<feGaussianBlur  in="shadowOffsetOuter2" result="shadowBlurOuter2" stdDeviation="5"></feGaussianBlur>
+	
+		<feColorMatrix  in="shadowBlurOuter2" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" result="shadowMatrixOuter2" type="matrix">
+		</feColorMatrix>
+	<feMerge>
+		<feMergeNode  in="shadowMatrixOuter1"></feMergeNode>
+		<feMergeNode  in="shadowMatrixOuter2"></feMergeNode>
+	</feMerge>
+</filter>
+<title>A3F9094D-0822-4248-927C-A166B4BCD3BE</title>
+<desc>Created with sketchtool.</desc>
+<g id="Symbols">
+	<g id="tix_x2F_Manchester" transform="translate(20.000000, 16.000000)">
+		<g id="Manchester">
+			<g id="Ticket">
+				<g id="Rectangle-7">
+					<g class="st0">
+						<rect id="path-1_2_" x="-1895" y="381" width="168" height="280"/>
+					</g>
+					<g>
+						<rect id="path-1_1_" x="-1895" y="381" class="st1" width="168" height="280"/>
+					</g>
+				</g>
+				<rect id="Rectangle-7-Copy" x="-1811" y="381" class="st2" width="84" height="280"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

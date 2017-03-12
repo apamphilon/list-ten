@@ -1,0 +1,104 @@
+.list-block {
+  background-color: $light_grey;
+  padding: 0 0 60px;
+  margin-top: 193px;
+  position: relative;
+  .city-block {
+    float: left;
+    width: 20%;
+    position: relative;
+    top: -70px;
+  }
+  &__title {
+    @include inline-block;
+    color: $orange;
+    @include font-size(40);
+  	font-weight: bold;
+    cursor: pointer;
+    margin: 0;
+    line-height: normal;
+    padding-right: 20px;
+    @include transition(all ease-in-out 0.3s);
+    &:hover {
+      color: darken($orange, 10%);
+    }
+  }
+  &__description {
+    display: none;
+    @include transition(color ease-in-out 0.3s);
+    color: #808080;
+    @include font-size(20);
+  }
+  &__list {
+    list-style: none;
+    margin: 70px 0 0;
+    padding: 0;
+    float: right;
+    width: 80%;
+  }
+  &__list-item {
+    padding-left: 80px;
+    margin-bottom: 22px;
+    padding-bottom: 22px;
+    position: relative;
+    border-bottom: 1px solid #ceced2;
+    &.active {
+      color: gainsboro;
+      input[type=checkbox] + label {
+        background-image: url('img/tick.jpg');
+        background-position: center center;
+        background-size: 65%;
+        background-repeat: no-repeat;
+      }
+      .list-block__title {
+        color: #ceced2;
+      }
+      .list-block__description {
+        color: #ceced2;
+      }
+    }
+  }
+  input[type=checkbox] {
+    display:none;
+  }
+  input[type=checkbox] + label {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-top: 13px;
+    cursor: pointer;
+    border: 1px solid gainsboro;
+    border-radius: 2px;
+  }
+  &__map-marker {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    width: 12px;
+  	height: 16px;
+    background-image: url('img/ico-map.svg');
+    .no-svg & {
+      background-image: url('img/ico-map.png');
+    }
+  }
+  &__meta {
+    clear: both;
+    float: left;
+    width: 100%;
+    margin: 50px 0 0;
+  }
+  &__meta-image {
+    border-radius: 100%;
+    @include inline-block;
+    margin-right: 10px;
+  }
+  &__meta-title {
+    @include inline-block;
+    @include font-size(20);
+    font-weight: normal;
+    color: #808080;
+  }
+}
