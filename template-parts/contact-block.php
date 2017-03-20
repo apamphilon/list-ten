@@ -7,10 +7,13 @@
       </div>
 
       <div class="col-md-4">
-        <form action="mailinglist/thankyou.php" method="post">
-          Email:
-          <input type="email" name="u_email" required><br>
-          <input type="submit" value="Submit"><br>
+        <p>We’ll send you emails when we have new places for you to explore, or we’ve updated an existing place.</p>
+
+        <span class="mailinglist-thanks" id="js-mailinglist-thanks">Thanks! Talk to you soon.</span>
+
+        <form id="js-mailinglist-form" class="mailinglist-form">
+          <input type="email" name="u_email" id="js-mailinglist-email" class="mailinglist-form__email" placeholder="Your email address" required>
+          <input type="submit" value="OK" id="js-mailinglist-submit" class="mailinglist-form__submit">
         </form>
       </div>
 

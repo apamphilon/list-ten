@@ -3844,6 +3844,44 @@ label {
 .contact-block {
   background-color: #fee94e; }
 
+.mailinglist-thanks {
+  display: none;
+  font-size: 18px;
+  font-size: 1.8rem; }
+
+.mailinglist-form .mailinglist-form__email {
+  background-color: #fee94e;
+  border-bottom: 4px solid #414cb7;
+  width: 253px;
+  float: left;
+  outline: none;
+  padding-left: 0;
+  font-size: 18px;
+  font-size: 1.8rem; }
+  .mailinglist-form .mailinglist-form__email.success {
+    border-bottom: 4px solid #4cd964; }
+  .mailinglist-form .mailinglist-form__email.error {
+    border-bottom: 4px solid #ff554c; }
+
+.mailinglist-form .mailinglist-form__submit {
+  width: 20%;
+  padding: 0;
+  background: transparent;
+  margin-top: 0;
+  border-bottom: 4px solid #414cb7;
+  color: #414cb7;
+  width: 33px;
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 0.8px; }
+  .mailinglist-form .mailinglist-form__submit.error {
+    color: #ff554c;
+    border-bottom: 4px solid #ff554c; }
+  .mailinglist-form .mailinglist-form__submit.success {
+    color: #4cd964;
+    border-bottom: 4px solid #4cd964; }
+
 .color-pattern {
   position: fixed;
   top: 0;

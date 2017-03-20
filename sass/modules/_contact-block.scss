@@ -1,3 +1,47 @@
 .contact-block {
   background-color: $yellow;
 }
+
+.mailinglist-thanks {
+  display: none;
+  @include font-size(18);
+}
+
+.mailinglist-form {
+  .mailinglist-form__email {
+    background-color: $yellow;
+    border-bottom: 4px solid $purple;
+    width: 253px;
+    float: left;
+    outline: none;
+    padding-left: 0;
+    @include font-size(18);
+    &.success {
+      border-bottom: 4px solid $success;
+    }
+    &.error {
+      border-bottom: 4px solid $error;
+    }
+  }
+
+  .mailinglist-form__submit {
+    width: 20%;
+    padding: 0;
+    background: transparent;
+    margin-top: 0;
+    border-bottom: 4px solid #414cb7;
+    color: $purple;
+    width: 33px;
+    @include font-size(18);
+  	font-weight: 800;
+  	letter-spacing: 0.8px;
+    &.error {
+      color: $error;
+      border-bottom: 4px solid $error;
+    }
+    &.success {
+      color: $success;
+      border-bottom: 4px solid $success;
+    }
+  }
+}
