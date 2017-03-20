@@ -3824,9 +3824,12 @@ label {
 
 .city-block {
   position: relative;
-  max-width: 170px; }
+  max-width: 170px;
+  transition: all ease-in-out 0.3s; }
   .city-block a {
     color: #000; }
+  .city-block:hover {
+    margin-top: -10px; }
   .city-block__title {
     position: absolute;
     top: 20px;

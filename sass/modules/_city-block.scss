@@ -1,8 +1,12 @@
 .city-block {
   position: relative;
   max-width: 170px;
+  @include transition(all ease-in-out 0.3s);
   a {
     color: $black;
+  }
+  &:hover {
+    margin-top: -10px;
   }
   &__title {
     position: absolute;

@@ -7,19 +7,6 @@ $(document).ready(function() {
   	$(this).next('.list-block__description:hidden').slideDown().addClass('opened').prev('.list-block__title').addClass('active');
   });
 
-  // city block hover effect
-  $('.city-block').on('mouseenter', function() {
-    $(this).animate({
-      bottom: 75
-    });
-  });
-
-  $('.city-block').on('mouseleave', function() {
-    $(this).animate({
-      bottom: 0
-    });
-  });
-
   // pagination for list blocks
   // arrow key functionality
   $(document).keydown(function(e) {
