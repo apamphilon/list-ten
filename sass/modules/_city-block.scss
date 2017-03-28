@@ -7,6 +7,9 @@
   }
   &:hover {
     margin-top: -10px;
+    .page-list & {
+      margin-top: 0;
+    }
   }
   &__title {
     position: absolute;

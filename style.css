@@ -3830,6 +3830,8 @@ label {
     color: #000; }
   .city-block:hover {
     margin-top: -10px; }
+    .page-list .city-block:hover {
+      margin-top: 0; }
   .city-block__title {
     position: absolute;
     top: 20px;
