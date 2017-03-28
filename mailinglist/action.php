@@ -33,7 +33,7 @@ if(isset($_POST['submit'])){
 
         // store the status message based on response code
         if ($httpCode == 200) {
-            $_SESSION['msg'] = '<p style="color: #34A853">You have successfully subscribed to CodexWorld.</p>';
+            $_SESSION['msg'] = '<p style="color: #34A853">You have successfully subscribed to list-ten.</p>';
         } else {
             switch ($httpCode) {
                 case 214:
