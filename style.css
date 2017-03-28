@@ -3763,13 +3763,13 @@ label {
         top: 50%;
         right: 0;
         left: 0;
-        margin-top: 4px;
+        margin-top: 7px;
         display: inline-block;
         *display: inline;
         zoom: 1;
         width: 100%;
-        height: 6px;
-        background: #fee94e; }
+        height: 4px;
+        background: #5ac8fa; }
   .intro.color-light-blue {
     background-color: #5ac8fa; }
     .intro.color-light-blue h2:nth-child(2) {
@@ -3825,11 +3825,11 @@ label {
 .city-block {
   position: relative;
   max-width: 170px;
-  transition: all ease-in-out 0.3s; }
+  transition: all ease-in-out 0.1s; }
   .city-block a {
     color: #000; }
   .city-block:hover {
-    margin-top: -10px; }
+    margin-top: -20px; }
     .page-list .city-block:hover {
       margin-top: 0; }
   .city-block__title {

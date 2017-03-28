@@ -7,10 +7,17 @@
       </div>
 
       <div class="col-md-4">
-        <form action="mailinglist/thankyou.php" method="post">
-          Email:
-          <input type="email" name="u_email" required><br>
-          <input type="submit" value="Submit"><br>
+        <?php
+          session_start(); // place it on the top of the script
+
+          $statusMsg = !empty($_SESSION['msg'])?$_SESSION['msg']:'';
+          unset($_SESSION['msg']);
+          echo $statusMsg;
+        ?>
+
+        <form method="post" action="mailinglist/action.php" id="form">
+          <p><label>Email: </label><input type="text" name="email" id="email" /></p>
+          <p><input type="submit" name="submit" value="SUBSCRIBE"/></p>
         </form>
       </div>
 
