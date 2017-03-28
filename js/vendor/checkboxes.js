@@ -1476,9 +1476,6 @@ function checkboxState() {
   var $checkboxes = $('[id*="js-list"]').find(':checkbox');
 
   $checkboxes.on('change', function() {
-    // play sound
-    playSound();
-
     // toggle active state
     $(this).parents('li').toggleClass('active');
 
@@ -1505,9 +1502,3 @@ function checkboxState() {
   });
 }
 checkboxState(); // init
-
-function playSound() {
-  var audio = new Audio('audio/ping.wav');
-  audio.currentTime = 0; // rewind to the start of the sample
-  audio.play();
-}
